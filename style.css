@@ -51,16 +51,26 @@ table {
 
 /* Post meyer reset */
 
+h2 {
+    font-size: 26pt;
+}
+
 .container,
-#content-pane {
+#content-pane,
+ul,
+li {
     display: flex;
 }
 
-#content-pane {
+ul {
+    flex-wrap: wrap;
+}
+
+#content-pane,
+li {
     flex-direction: column;
 }
 
-ul,
 fieldset:first-child, 
 #welcome-message,
 #create-account,
@@ -75,6 +85,7 @@ fieldset:first-child,
 
 #background-image {
     width: 40%;
+    background-color: bisque;
 }
 
 #content-pane {
@@ -86,4 +97,19 @@ form,
 fieldset,
 #signup {
     width: 100%;
+}
+
+input,
+label {
+    display: block;
+    width: 300px;
+}
+
+ul {
+    gap: 2rem;
+    width: calc(600px + 5rem);
+}
+
+li {
+    gap: .5rem;
 }
