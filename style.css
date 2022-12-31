@@ -60,6 +60,7 @@ table {
     --matcha-light: #aaDFa6;
     --logo-text-font-light: #FDFDFD;
     --logo-text-font-dark: #343434;
+    --input-light-gray: #AAA;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 500;
     color: var(--logo-text-font-dark);
@@ -244,7 +245,7 @@ a:visited {
 }
 
 input {
-    border: 2px solid var(--logo-text-font-dark);
+    border: 2px solid var(--input-light-gray);
     border-radius: 5px;
 }
 
@@ -256,12 +257,6 @@ input[type='tel']:focus {
     box-shadow: 5px 5px 5px rgba(100, 191, 100, .5);
 }
 
-input[type='text']:valid,
-input[type='email']:valid,
-input[type='password']:valid,
-input[type='tel']:valid {
-    background: var(--logo-text-font-light);
-}
 
 
 
