@@ -54,9 +54,15 @@ table {
 /*Variables*/
 /* Settings for global font */
 :root {
+    --content-width: calc(600px + 5rem);
+    /* Colors */
+    --matcha: #69bf64;
+    --matcha-light: #aaDFa6;
+    --logo-text-font-light: #FDFDFD;
+    --logo-text-font-dark: #343434;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 500;
-    --content-width: calc(600px + 5rem);
+    color: var(--logo-text-font-dark);
 }
 
 /* Settings for specific font */
@@ -66,7 +72,8 @@ h2 {
 }
 
 p,
-input {
+input,
+button {
     font-size: 16pt;
 }
 
@@ -96,6 +103,7 @@ li {
 }
 
 fieldset:first-child, 
+button,
 .welcome-message,
 .create-account,
 .login {
@@ -113,6 +121,7 @@ form {
 }
 
 ul,
+button,
 .create-account,
 .login {
     margin-top: 3rem;
@@ -143,6 +152,7 @@ input,
 label {
     display: block;
     width: 300px;
+    font-weight: 600;
 }
 
 ul {
@@ -161,8 +171,8 @@ li {
 
 form {
     box-shadow: 
-    0px 5px 5px rgba(0,0,0,.05),
-    0px -5px 5px rgba(0,0,0,.05);
+    0px 5px 5px rgba(100, 191, 100, .2),
+    0px -5px 5px rgba(100, 191, 100,.2);
 }
 
 /* Background Colors and Images */
@@ -182,4 +192,21 @@ form {
     background-repeat: no-repeat;
     background-color: bisque;
     width: 40vw;
+}
+
+/* Button */
+
+button {
+    width: 300px;
+    height: 60px;
+    border: 2px solid var(--logo-text-font-light);
+    color: var(--logo-text-font-light);
+    border-radius: 16px;
+    background-color: var(--matcha);
+    box-shadow: 5px 5px 5px rgba(100, 191, 100, .5);
+}
+
+button:hover {
+    background-color: var(--matcha-light);
+    color: var(--logo-text-font-dark);
 }
