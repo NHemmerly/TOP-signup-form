@@ -54,11 +54,10 @@ table {
 /*Variables*/
 /* Settings for global font */
 :root {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 500;
     --content-width: calc(600px + 5rem);
 }
-
 
 /* Settings for specific font */
 h2 {
@@ -71,20 +70,17 @@ input {
     font-size: 16pt;
 }
 
-/* Background Colors and Images */
-
-#content-pane {
-    background-color: #FDFDFD;
+em {
+    font-style: italic;
 }
-
-form {
-    background-color: #fff;
-}
-
 
 /* Styling that affects many, but not all classes */
+div {
+    display: block;
+}
+
 .container,
-#content-pane,
+.content-pane,
 ul,
 li {
     display: flex;
@@ -94,19 +90,19 @@ ul {
     flex-wrap: wrap;
 }
 
-#content-pane,
+.content-pane,
 li {
     flex-direction: column;
 }
 
 fieldset:first-child, 
-#welcome-message,
-#create-account,
-#login {
+.welcome-message,
+.create-account,
+.login {
     margin-left: 3rem;
 }
 
-#welcome-message {
+.welcome-message {
     margin-top: 8rem;
 }
 
@@ -117,33 +113,29 @@ form {
 }
 
 ul,
-#create-account,
-#login {
+.create-account,
+.login {
     margin-top: 3rem;
 }
 
 ul,
-#welcome-message {
+.welcome-message {
     width: var(--content-width);
 }
+
+/* Sizing for Elements */
 
 .container {
     height: 100vh;
     width: 100vw;
 }
 
-#background-image {
-    width: 40%;
-    background-color: bisque;
-}
-
-#content-pane {
-    width: 60%;
+.content-pane {
+    width: 60vw;
 }
 
 form,
-fieldset,
-#signup {
+.signup {
     width: 100%;
 }
 
@@ -163,12 +155,31 @@ li {
 
 /* Box Shadow */
 
-#content-pane {
-    box-shadow: -5px 0px  5px rgba(0, 0, 0, .05);
+.content-pane {
+    box-shadow: -5px 0px  5px rgba(0, 0, 0, .1);
 }
 
 form {
     box-shadow: 
     0px 5px 5px rgba(0,0,0,.05),
     0px -5px 5px rgba(0,0,0,.05);
+}
+
+/* Background Colors and Images */
+
+.content-pane {
+    background-color: #FDFDFD;
+}
+
+form {
+    background-color: #fff;
+}
+
+.background-image {
+    background-image: url(images/keyboard-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: bisque;
+    width: 40vw;
 }
