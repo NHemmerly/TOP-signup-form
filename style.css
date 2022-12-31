@@ -114,12 +114,6 @@ button,
     margin-top: 8rem;
 }
 
-form {
-    padding-top: 1rem;
-    padding-bottom: 1.5rem;
-    margin-top: 5rem;
-}
-
 ul,
 button,
 .create-account,
@@ -169,20 +163,10 @@ li {
     box-shadow: -5px 0px  5px rgba(0, 0, 0, .1);
 }
 
-form {
-    box-shadow: 
-    0px 5px 5px rgba(100, 191, 100, .2),
-    0px -5px 5px rgba(100, 191, 100,.2);
-}
-
 /* Background Colors and Images */
 
 .content-pane {
     background-color: #FDFDFD;
-}
-
-form {
-    background-color: #fff;
 }
 
 .background-image {
@@ -197,16 +181,30 @@ form {
 /* Button */
 
 button {
+    background-color: var(--matcha);
+    color: var(--logo-text-font-light);
+    box-shadow: 5px 5px 5px rgba(100, 191, 100, .5);
+    border: 2px solid var(--logo-text-font-light);
+    border-radius: 16px;
     width: 300px;
     height: 60px;
-    border: 2px solid var(--logo-text-font-light);
-    color: var(--logo-text-font-light);
-    border-radius: 16px;
-    background-color: var(--matcha);
-    box-shadow: 5px 5px 5px rgba(100, 191, 100, .5);
+    font-weight: 600;
 }
 
 button:hover {
     background-color: var(--matcha-light);
     color: var(--logo-text-font-dark);
 }
+
+/* Form */
+
+form {
+    background-color: #fff;
+    box-shadow: 
+    0px 5px 5px rgba(100, 191, 100, .2),
+    0px -5px 5px rgba(100, 191, 100,.2);
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    margin-top: 5rem;
+}
+
