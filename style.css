@@ -97,6 +97,8 @@ em {
 
 .error > p {
     font-size: 14px;
+    font-weight: 600;
+    color: rgb(191, 100, 100);
 }
 
 /* Styling that affects many, but not all classes */

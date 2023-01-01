@@ -3,7 +3,9 @@
 function validateForm(e) {
     if (password.value != confirmPassword.value) {
         e.preventDefault();
-        error.firstChild.innerText += "Passwords do not match";
+        error.firstChild.innerText += "*Passwords do not match";
+        password.setAttribute("style", "border-color: rgb(191, 100, 100);")
+        confirmPassword.setAttribute("style", "border-color: rgb(191, 100, 100);")
     } 
 }
 
