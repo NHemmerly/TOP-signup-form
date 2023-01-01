@@ -95,6 +95,10 @@ em {
     font-style: italic;
 }
 
+.error > p {
+    font-size: 14px;
+}
+
 /* Styling that affects many, but not all classes */
 div {
     display: block;
